@@ -36,10 +36,13 @@
   display: block;
   width: 100%;
   transition: 0.3s;
+  text-decoration: none;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-
+.loggedin a{
+  text-decoration: none;
+}
 .login-form button:hover,
 .signup-form button:hover,
 .loggedin button:hover {
@@ -49,3 +52,61 @@
   cursor: pointer;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#chat ul{
+  list-style-type: none;
+  padding: 0;
+  overflow-y: scroll;
+  height: 400px;
+}
+.chatbox{
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 300px;
+  margin: auto;
+}
+
+#chat ul li{
+  padding: 4px;
+  margin: 6px; 
+}
+#chat ul li span{
+  border-radius: 3px;
+  padding: 4px;
+  word-wrap: break-word;
+}
+.sender{
+  text-align: left;
+}
+.sender span{
+  border:0.5px solid lightblue;
+  background-color: lightblue;
+  color: blue;
+}
+.receiver{
+  text-align: right;
+}
+.receiver span{
+  border:0.5px solid gainsboro;
+  background-color: gainsboro;
+  color:red;
+}

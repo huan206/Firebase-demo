@@ -9,17 +9,18 @@
     <div class="form">
       <div class="signup-form" id="signup_div">
         <h2>Signup to firebase</h2>
+        <input type="text" placeholder="Name" id="name_signup" />
         <input type="email" placeholder="Email address" id="email_signup" />
         <input type="password" placeholder="Password" id="password_signup" />
-        <button onclick="signup()">Create</button>
+        <button id="sighUp">Create</button>
         <br>
         <button id="login_btn">Login</button>
       </div>
-      <div class="login-form" id="login_div">
+      <div class="login-form" id="login_div"> 
         <h2>Login to firebase</h2>
         <input type="email" placeholder="Username" id="email_login" />
         <input type="password" placeholder="Password" id="password_login" />
-        <button onclick="login()">Login</button>
+        <button id="login" >Login</button>
         <br>
         <button class="btn btn-block btn-social btn-google" id="btnGoogle" type="button">Login with Google</button>
         <br>
@@ -30,13 +31,15 @@
       <h2>Welcome</h2>
       <p id="user_para">You are loggedin firebase</p>
       <br>
-      <button  id="verify" onclick="sendEmail()">Verification</button>
+      <button id="sendMail">Verification</button>
       <br>
-      <button onclick="logout()">Logout</button>
+      <a id="chat" href="/chat.html"><button id="chat" onclick="chat()">Go to chat</button></a>
+      <br>
+      <button id="logout" >Logout</button>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="./config.js"></script>
     <script src="index.js"></script>
   </body>
